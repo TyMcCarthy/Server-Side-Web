@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Server-Side-Web
+  host: Server-Side-Web
+  disk_quota: 1024M
+  services:
+  - Server-Side-Web-cloudantNoSQLDB
+  - Auto-Scaling-37
+  - availability-monitoring-auto
